@@ -1,0 +1,47 @@
+ body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root {
+    text-align: center;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative; /* Added */
+  }
+  .card h2, .card textarea {
+    margin: 10px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: absolute; /* Added */
+  }
+  .card h2 {
+    top: -3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .card textarea {
+    width: 80%;
+    height: 100px;
+    overflow: auto;
+    top: calc(50% + 50px); /* Adjusted */
+    left: 50%;
+    transform: translateX(-50%); /* Adjusted */
+  }
+  .card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
