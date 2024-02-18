@@ -12,23 +12,24 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('./clock_img.jpeg');
 }
 h1{
     text-align: center;
-    /* background-color: rgb(23, 254, 69); */
-    padding: 0px 0px 70px 0px;
+    color: #2edc21;
+    padding: 0px 0px 0px 0px;
     
 }
 
 .clock {
     
     font-size: 4rem;
-    color: #333;
+    color: #141313;
     height: fit-content;
     width: fit-content;  
-    padding: 30px;
-    border: 5px solid #333;
-    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 2px;
     background-color: #e716c4;
     display: flex;
     justify-content: center;
@@ -40,7 +41,7 @@ h1{
     height: 60%;
     width: 90%;
     border-top: 2px solid;
-    background-color: rgb(38, 171, 175);
+    /* background-color: rgb(38, 171, 175); */
     display:flex ;
     flex-direction: column;
     justify-content: center;

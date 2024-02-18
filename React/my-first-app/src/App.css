@@ -1,0 +1,12 @@
+.ajay{
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ajay span{
+  color: rgb(231, 24, 145);
+}
