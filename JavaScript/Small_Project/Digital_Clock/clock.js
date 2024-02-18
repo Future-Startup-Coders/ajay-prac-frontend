@@ -13,7 +13,7 @@ function render(root, time) {
     clockDiv.textContent = time;
     clockDiv.className = 'clock';
 
-    // Clear the content 
+    // Clear the content of page 
     root.innerHTML = '';
 
    
