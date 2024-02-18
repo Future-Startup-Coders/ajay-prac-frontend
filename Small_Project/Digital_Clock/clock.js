@@ -3,9 +3,11 @@ const root = document.getElementById('root');
 const head= document.createElement('h1');
 head.textContent = "Digital Clock";
 
-function render(root, time) {
-    
+const image = document.createElement('img');
+image.className = 'image';
+// image.setAttribute('src', './clock_img.jpeg');
 
+function render(root, time) {
     
     const clockDiv = document.createElement('div');
     clockDiv.textContent = time;
@@ -16,16 +18,19 @@ function render(root, time) {
 
    
     // ui show
+
     const maindiv = document.createElement('div');
     maindiv.className = 'maindiv';
+    // maindiv.appendChild(image);
     maindiv.appendChild(head)
     maindiv.appendChild(clockDiv)
+    
     root.appendChild(maindiv)
 }
 
 // update clock
 
-function updateClock() {
+function showtime() {
     const now = new Date();
     const hours = now.getHours().toString().padStart(2, '0');
     const minutes = now.getMinutes().toString().padStart(2, '0');
@@ -37,9 +42,8 @@ function updateClock() {
 }
 
 
-setInterval(updateClock, 1000);
-
-updateClock();
+setInterval(showtime, 1000);
+showtime();
 
 
 
